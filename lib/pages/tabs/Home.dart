@@ -8,7 +8,8 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage>  {
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -24,14 +25,9 @@ class _HomePageState extends State<HomePage> {
           ),
           RaisedButton(
             onPressed: () {
-                  Navigator.of(context)
-                  .push(MaterialPageRoute(
-                       builder: (context) => FormPage(),
-                       settings: RouteSettings(arguments: {'name':'dongdong'})
-                    )
-                    );
+                  Navigator.pushNamed(context, '/tabbarcontroller');
             },
-            child: Text('go to Form page with Param'),
+            child: Text('go to TabbarController'),
           ),
         ],
       ),
