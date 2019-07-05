@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         routes: routes,
-        initialRoute: '/search',
+        initialRoute: '/form',
         theme: ThemeData(primarySwatch: Colors.yellow),
     );
   }
